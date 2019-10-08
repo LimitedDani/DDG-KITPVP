@@ -1,7 +1,5 @@
 package nl.daniquedejong.kitpvp.objects;
 
-import org.bukkit.entity.Player;
-
 public class PVPPlayer {
     private int kills;
     private int deaths;

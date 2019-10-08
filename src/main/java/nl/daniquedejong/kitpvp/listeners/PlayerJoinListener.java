@@ -4,12 +4,9 @@ import nl.daniquedejong.kitpvp.Plugin;
 import nl.daniquedejong.kitpvp.SQLUtils;
 import nl.daniquedejong.kitpvp.Utils;
 import org.bukkit.Location;
-import org.bukkit.configuration.file.FileConfiguration;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
 import org.bukkit.event.player.PlayerJoinEvent;
-
-import java.io.File;
 import java.sql.SQLException;
 
 public class PlayerJoinListener implements Listener {

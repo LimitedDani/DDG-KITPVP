@@ -5,7 +5,6 @@ import nl.daniquedejong.kitpvp.SQLUtils;
 import nl.daniquedejong.kitpvp.Utils;
 import nl.daniquedejong.kitpvp.objects.Kit;
 import nl.daniquedejong.kitpvp.objects.PVPPlayer;
-import nl.daniquedejong.kitpvp.signs.SignUpdater;
 import org.bukkit.Bukkit;
 import org.bukkit.ChatColor;
 import org.bukkit.Location;
@@ -18,7 +17,6 @@ import org.bukkit.scoreboard.Scoreboard;
 
 import java.sql.ResultSet;
 import java.sql.SQLException;
-import java.text.DecimalFormat;
 import java.util.*;
 
 public class KitPvP {
@@ -89,6 +87,12 @@ public class KitPvP {
     }
     public void leave(Player player, boolean serverLeave) {
         removeScoreboard(player);
+        try {
+            SQLUtils.updateKillsAndDeaths(this.plugin, player.getUniqueId(), players.get(player).getKills(), players.get(player).getDeaths());
+            players.remove(player);
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
         if(!serverLeave) {
             player.teleport(spawnLocation);
         }

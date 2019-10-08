@@ -1,10 +1,8 @@
 package nl.daniquedejong.kitpvp.game;
 
 import nl.daniquedejong.kitpvp.Plugin;
-import nl.daniquedejong.kitpvp.Utils;
 import nl.daniquedejong.kitpvp.objects.Kit;
 import org.bukkit.Bukkit;
-import org.bukkit.Location;
 import org.bukkit.Material;
 import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;

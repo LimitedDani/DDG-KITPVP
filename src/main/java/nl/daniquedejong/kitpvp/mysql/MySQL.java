@@ -1,8 +1,6 @@
 package nl.daniquedejong.kitpvp.mysql;
 
-import java.io.*;
 import java.sql.*;
-import java.util.Scanner;
 
 public class MySQL
   extends Database
