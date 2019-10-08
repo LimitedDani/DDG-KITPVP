@@ -8,6 +8,8 @@ import java.util.UUID;
 
 public class SQLUtils {
     /**
+     * Create a new row in the database for a new player
+     *
      * @param plugin Main class
      * @param uuid Unique ID of the player
      */
@@ -23,6 +25,8 @@ public class SQLUtils {
     }
 
     /**
+     * Get the kills and deaths of a player out of the database
+     *
      * @param plugin Main class
      * @param uuid Unique ID of the player
      * @return ResultSet
@@ -35,6 +39,8 @@ public class SQLUtils {
     }
 
     /**
+     * Update the kills and deaths of a player in the database
+     *
      * @param plugin Main class
      * @param uuid Unique ID of the player
      * @param kills amount of kills the player has
