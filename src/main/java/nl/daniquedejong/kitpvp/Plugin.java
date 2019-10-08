@@ -56,7 +56,6 @@ public class Plugin extends JavaPlugin implements Listener {
         try
         {
             this.mysql.openConnection();
-            InputStream in = getClass().getResourceAsStream("/ddg.sql");
         }
         catch (ClassNotFoundException | SQLException e )
         {

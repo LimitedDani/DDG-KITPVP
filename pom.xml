@@ -58,12 +58,6 @@
             <version>1.13.2-R0.1-SNAPSHOT</version>
             <scope>provided</scope>
         </dependency>
-        <dependency>
-            <groupId>org.apache.ibatis</groupId>
-            <artifactId>ibatis-core</artifactId>
-            <version>3.0</version>
-            <scope>compile</scope>
-        </dependency>
     </dependencies>
 
     <repositories>
@@ -84,7 +78,6 @@
                 <includes>
                     <include>plugin.yml</include>
                     <include>config.yml</include>
-                    <include>ddg.sql</include>
                 </includes>
             </resource>
             <resource>
@@ -95,7 +88,6 @@
                     <exclude>**/*.java</exclude>
                     <exclude>plugin.yml</exclude>
                     <exclude>config.yml</exclude>
-                    <exclude>ddg.sql</exclude>
                 </excludes>
             </resource>
         </resources>
