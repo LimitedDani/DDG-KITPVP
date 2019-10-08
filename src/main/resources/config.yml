@@ -1,0 +1,84 @@
+database:
+  host: localhost
+  port: 3306
+  database: ddg
+  user: 'root'
+  password: 'root'
+kitpvp:
+  maxplayers: 10
+  spawn:
+    world: "world"
+    x: 82
+    y: 68
+    z: 43
+    pitch: 90.0
+    yaw: 0.0
+  signs:
+    0:
+      world: "world"
+      x: 81
+      y: 69
+      z: 44
+    1:
+      world: "world"
+      x: 81
+      y: 69
+      z: 43
+  spawns:
+    0:
+      world: "world"
+      x: 76
+      y: 67
+      z: 55
+      pitch: 90.0
+      yaw: 0.0
+    1:
+      world: "world"
+      x: 76
+      y: 67
+      z: 64
+      pitch: 90.0
+      yaw: 0.0
+  kits:
+    0:
+      name: "DDG Testkit"
+      material: "diamond_block"
+      display_name: "DDG Testkit"
+      slot: 0
+      lore:
+        - "test"
+        - "test1"
+      armor:
+        helmet:
+          material: "diamond_helmet"
+          amount: 1
+          display_name: "Helm"
+          lore:
+            - "Een mooie helm"
+            - "voor op je koppie"
+        chestplate:
+          material: "diamond_chestplate"
+          amount: 1
+          display_name: "Buikbescherming"
+          lore:
+            - "Vúr op je buikie"
+        leggings:
+          material: "diamond_leggings"
+          amount: 1
+          display_name: "Leggings"
+          lore:
+            - "Een mooie helm"
+            - "voor op je koppie"
+        boots:
+          material: "diamond_boots"
+          amount: 1
+          display_name: "Boots van Dora"
+          lore:
+            - "Nu wil je louis vuitton"
+      items:
+        0:
+          material: "diamond_sword"
+          amount: 1
+          display_name: "Gekke zwaardje"
+          lore:
+            - "Gonna hurt them with this"

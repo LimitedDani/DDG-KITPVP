@@ -1,0 +1,15 @@
+name: KitPVP
+version: 0.1-SNAPSHOT
+description: KitPVP plugin as application for DDG Nukkit Project.
+author: Limited_Dani
+website: ${url}
+
+main: nl.daniquedejong.kitpvp.Plugin
+
+commands:
+  kitpvp:
+    description: Plugin command
+    permission: kitpvp.kitpvp
+    usage: /<command>
+
+permissions: {}
