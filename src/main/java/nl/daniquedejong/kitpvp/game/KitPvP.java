@@ -128,20 +128,20 @@ public class KitPvP {
 
         Score blank1 = objective.getScore(" ");
 
-        Score online = objective.getScore(ChatColor.DARK_GRAY + "» " + ChatColor.GOLD + "Kills");
-        Score onlinePlayers = objective.getScore(ChatColor.DARK_GRAY + "» " + ChatColor.GREEN + players.get(player).getKills() + ChatColor.RESET.toString());
+        Score kills = objective.getScore(ChatColor.DARK_GRAY + "» " + ChatColor.GOLD + "Kills");
+        Score killsScore = objective.getScore(ChatColor.DARK_GRAY + "» " + ChatColor.GREEN + players.get(player).getKills() + ChatColor.RESET.toString());
 
         Score blank2 = objective.getScore("   ");
 
-        Score unique = objective.getScore(ChatColor.DARK_GRAY + "» " + ChatColor.GOLD + "Deaths");
-        Score uniquePlayers = objective.getScore(ChatColor.DARK_GRAY + "» " + ChatColor.RED + players.get(player).getDeaths());
+        Score deaths = objective.getScore(ChatColor.DARK_GRAY + "» " + ChatColor.GOLD + "Deaths");
+        Score deathsScore = objective.getScore(ChatColor.DARK_GRAY + "» " + ChatColor.RED + players.get(player).getDeaths());
 
         blank1.setScore(5);
-        online.setScore(4);
-        onlinePlayers.setScore(3);
+        kills.setScore(4);
+        killsScore.setScore(3);
         blank2.setScore(2);
-        unique.setScore(1);
-        uniquePlayers.setScore(0);
+        deaths.setScore(1);
+        deathsScore.setScore(0);
 
         player.setScoreboard(scoreboard);
     }
